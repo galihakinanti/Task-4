@@ -16,8 +16,11 @@ Nodebb-theme-material v2.0 sekarang dipublikasikan ke npm.
 Kita dapat menginstall-nya dari ACP "Plugins".
 
 Cara menginstalasi tema untuk NodeBB menggunakan Google Material Design:
+
 -- Instal tema ini menggunakan "Plugins" di halaman NodeBB ACP
+
 -- Setelah menginstalas lalu beralih dengan menggunakan tema "Themes" di halaman ACP
+
 -- Restart NodeBB
 
 #### 2.Error in a plugin blocks another plugin.
