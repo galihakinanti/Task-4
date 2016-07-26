@@ -26,12 +26,19 @@ Cara menginstalasi tema untuk NodeBB menggunakan Google Material Design:
 #### 2.Error in a plugin blocks another plugin.
 
 Misalkan untuk memiliki dua plugin yang terpisah.
+
 Plugin pertama:
+
 "hook": "action:user.updateProfile", "method": "usernameUpdate"
+
 Di library dan dalam method "usernameUpdate" saya kira perlu menambahkan:
+
 return next(new Error("Username already exist"));	//It is an example it could be another exception
+
 Plugin kedua:
+
 Saya ingin menghapus akun ketika pengguna mengklik tombol "hapus akun" jadi ketika saya klik tombol yang ada pada plugin pertama, maka lakukan operasi dibawah ini:
+
 user.updateProfile(id_corrente, {
 				'username': username_modificati,
 				'slug': slug_modificati,
